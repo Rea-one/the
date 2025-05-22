@@ -23,6 +23,16 @@ func NewOrigin() *Origin {
 	return ft
 }
 
+func (tar *Origin) setTree(path string) {
+	tar.The = &widget.Tree{
+		Root:       path,
+		ChildUIDs:  fileDirSearch,
+		IsBranch:   fileCheck,
+		CreateNode: file2node,
+		UpdateNode: nodeUpdate,
+	}
+}
+
 func fileDirSearch(path string) []string {
 	res, err := getSubDirectories(path)
 	if err != nil {

@@ -8,11 +8,11 @@ import (
 )
 
 func main() {
-	theWait := view.NewWait()
+	the := view.NewWork()
 	theApp := app.New()
 	theWin := theApp.NewWindow("Canvas")
 	theCav := theWin.Canvas()
-	theCav.SetContent(theWait.The)
+	theCav.SetContent(the.The)
 
 	theWin.Resize(fyne.NewSize(800, 500))
 	theWin.ShowAndRun()

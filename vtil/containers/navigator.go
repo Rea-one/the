@@ -7,6 +7,11 @@ type Navigator struct {
 }
 
 func NewNavigator() *Navigator {
+	return &Navigator{}
+}
+
+func (tar *Navigator) auto() {
+
 }
 
 func (tar *Navigator) to() {

@@ -1,11 +1,11 @@
 package env
 
 import (
-	lang "the/model/single/env/model/bunch"
+	lang "the/model/origin/env/model/sets"
 )
 
 type Env struct {
-	languages *lang.LanguageBunch
+	languages *lang.LanguageSets
 }
 
 func (tar *Env) Init() {
